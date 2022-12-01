@@ -15,6 +15,10 @@ tasks.withType<Test>().configureEach {
     useJUnitPlatform()
 }
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     testImplementation(platform("io.kotest:kotest-bom:5.5.4"))
