@@ -28,7 +28,7 @@ class Day01Test : ShouldSpec({
         }
 
         should("solves the answer") {
-            Day01(readResource("day01.txt")).solvePart1() shouldBe 69626
+            Day01(readResourceLines("day01.txt")).solvePart1() shouldBe 69626
         }
     }
 
@@ -38,7 +38,7 @@ class Day01Test : ShouldSpec({
         }
 
         should("solves the answer") {
-            Day01(readResource("day01.txt")).solvePart2() shouldBe 206780
+            Day01(readResourceLines("day01.txt")).solvePart2() shouldBe 206780
         }
     }
 })
