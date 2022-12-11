@@ -61,7 +61,7 @@ class Day11(input: String) {
     }
 
     class Add(private val value: Int?) : Operation() {
-        override fun invoke(item: Long): Long = item + if (value == null) item + item else item + value
+        override fun invoke(item: Long): Long = if (value == null) item + item else item + value
     }
 
     class Multiply(private val value: Int?) : Operation() {
